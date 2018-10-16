@@ -7,3 +7,16 @@
 // Base-theme overrides.
 @import 'overrides';
 
+$mobile:          "screen and (max-width: #{$screen-xs-max})";
+$tablet:          "screen and (min-width: #{$screen-sm-min})";
+$normal:          "screen and (min-width: #{$screen-md-min})";
+$wide:            "screen and (min-width: #{$screen-lg-min})";
+
+//Components
+@import 'component/header';
+
+// Blocks.
+@import 'blocks/search';
+
+// Pages.
+@import 'pages/frontpage';

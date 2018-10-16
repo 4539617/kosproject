@@ -6391,3 +6391,28 @@ p:last-child,
   padding: 0; }
   .help-block:first-child, .control-group .help-inline:first-child {
     margin-top: 0; }
+
+header.navbar {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.85); }
+
+#block-logotip {
+  line-height: 150px; }
+
+#block-kos-main-menu {
+  line-height: 150px; }
+  #block-kos-main-menu ul {
+    height: 150px;
+    line-height: 150px;
+    text-align: right;
+    float: right; }
+    #block-kos-main-menu ul li {
+      line-height: 150px;
+      float: none;
+      display: inline-block; }
+      #block-kos-main-menu ul li a {
+        color: #fff; }
+
+@media screen and (min-width: 768px) {
+  #block-kos-search {
+    display: none; } }

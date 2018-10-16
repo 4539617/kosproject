@@ -1,0 +1,28 @@
+header.navbar {
+  height: 150px;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+#block-logotip {
+  line-height: 150px;
+}
+
+#block-kos-main-menu {
+  line-height: 150px;
+
+  ul {
+    height: 150px;
+    line-height: 150px;
+    text-align: right;
+    float: right;
+
+    li {
+      line-height: 150px;
+      float: none;
+      display: inline-block;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
