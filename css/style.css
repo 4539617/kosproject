@@ -16,6 +16,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6394,24 +6395,66 @@ p:last-child,
 
 header.navbar {
   height: 150px;
-  background: rgba(0, 0, 0, 0.85); }
+  background: rgba(0, 0, 0, 0.5);
+  border: 0; }
+  header.navbar .navbar-toggle {
+    margin-top: 56px; }
 
 #block-logotip {
   line-height: 150px; }
 
 #block-kos-main-menu {
   line-height: 150px; }
-  #block-kos-main-menu ul {
-    height: 150px;
-    line-height: 150px;
-    text-align: right;
-    float: right; }
+  @media screen and (min-width: 768px) {
+    #block-kos-main-menu ul {
+      height: 150px;
+      line-height: 150px;
+      text-align: right;
+      float: right; } }
+  @media screen and (min-width: 768px) {
     #block-kos-main-menu ul li {
       line-height: 150px;
       float: none;
-      display: inline-block; }
-      #block-kos-main-menu ul li a {
-        color: #fff; }
+      display: inline-block; } }
+  #block-kos-main-menu ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    padding: 15px; }
+    #block-kos-main-menu ul li a:hover {
+      color: #4bcaff;
+      border: 2px solid #4bcaff;
+      padding: 13px; }
+  #block-kos-main-menu ul li a.is-active {
+    background: none;
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+    padding: 13px; }
+
+.region-navigation {
+  float: left; }
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.85); } }
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse #block-kos-main-menu ul {
+    float: none; } }
+
+body.navbar-is-fixed-top {
+  margin: 0; }
+
+#block-fonnaglavnuyu {
+  height: 700px; }
+  #block-fonnaglavnuyu .field--name-body {
+    margin-top: 300px;
+    font-size: 62px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: 300; }
 
 @media screen and (min-width: 768px) {
   #block-kos-search {

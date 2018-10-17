@@ -1,6 +1,11 @@
 header.navbar {
   height: 150px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.50);
+  border: 0;
+
+  .navbar-toggle {
+    margin-top: 56px;
+  }
 }
 
 #block-logotip {
@@ -11,18 +16,60 @@ header.navbar {
   line-height: 150px;
 
   ul {
-    height: 150px;
-    line-height: 150px;
-    text-align: right;
-    float: right;
+    @media #{$tablet} {
+      height: 150px;
+      line-height: 150px;
+      text-align: right;
+      float: right;
+    }
 
     li {
-      line-height: 150px;
-      float: none;
-      display: inline-block;
+      @media #{$tablet} {
+        line-height: 150px;
+        float: none;
+        display: inline-block;
+      }
+
       a {
         color: #fff;
+        font-size: 14px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        padding: 15px;
+
+        &:hover {
+          color: #4bcaff;
+          border: 2px solid #4bcaff;
+          padding: 13px;
+        }
+      }
+
+      a.is-active {
+        background: none;
+        color: #4bcaff;
+        border: 2px solid #4bcaff;
+        padding: 13px;
       }
     }
   }
+}
+
+.region-navigation {
+  float: left;
+}
+
+.navbar-collapse {
+  @media #{$mobile} {
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  #block-kos-main-menu ul {
+    @media #{$mobile}{
+      float: none;
+    }
+  }
+}
+
+body.navbar-is-fixed-top {
+  margin: 0;
 }
