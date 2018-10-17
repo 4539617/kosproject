@@ -14,7 +14,7 @@ function kos_preprocess_block(&$variables) {
         $variables['background_image_url'] = $url;
     }
 }
-
+/**
 function kos_preprocess_views_view_unformatted(&$variables) {
     if (!empty($variables['rows'][0]['content']['#row'])) {
         foreach ($variables['rows'] as $key => $row) {
@@ -33,6 +33,12 @@ function kos_preprocess_views_view_field(&$variables) {
     }
 }
 
+ *
+ *
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
 function kos_preprocess_paragraph(&$variables) {
     $paragraph = $variables['paragraph'];
     if ($paragraph->bundle() == 'social_icon') {
@@ -40,3 +46,4 @@ function kos_preprocess_paragraph(&$variables) {
         $variables['social_icon'] = $paragraph->field_social_network->value;
     }
 }
+

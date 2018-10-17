@@ -1,0 +1,38 @@
+.view-id-gallery_front {
+  .views-row {
+    margin-bottom: 30px;
+
+    .views-field-field-photo-gal {
+      a {
+        position: relative;
+        display: block;
+
+        &:hover {
+          &:after {
+            content: "+";
+            font-size: 55px;
+            font-weight: 300;
+            width: 36px;
+            text-align: center;
+            color: #fff;
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -16px;
+            top: 50%;
+            margin-top: -39px;
+
+          }
+          &:before {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            content: " ";
+          }
+        }
+      }
+    }
+  }
+}
